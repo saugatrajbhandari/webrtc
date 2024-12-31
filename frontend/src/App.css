@@ -1,0 +1,94 @@
+/* App Container */
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Header Section */
+.App-header {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+}
+
+.App-header h1 {
+  margin-bottom: 16px;
+}
+
+.App-header p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Control Panel */
+.wrapper-row {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+/* Call & Message Containers */
+.wrapper {
+  background-color: #fafafa;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-width: 260px;
+  text-align: center;
+}
+
+/* Inputs and Buttons */
+.wrapper input, 
+.wrapper textarea,
+.wrapper button {
+  width: 100%;
+  margin-top: 16px;
+}
+
+.wrapper textarea {
+  resize: none;
+}
+
+/* Player Container */
+.playerContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.playerContainer video {
+  border: 4px solid #007bff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.playerContainer video:first-child {
+  border-color: #28a745;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .wrapper-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .playerContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .playerContainer video {
+    width: 90%;
+    height: auto;
+  }
+}
