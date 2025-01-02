@@ -2,6 +2,7 @@ import { Button, Typography, Input } from "antd";
 const { Title } = Typography;
 const { TextArea } = Input;
 import "./App.css";
+import VideoCall from "./components/video-call";
 
 function App() {
   const renderHelper = () => {
@@ -40,6 +41,8 @@ function App() {
       </div>
     );
   };
+
+  return <VideoCall />;
 
   return (
     <div className="App">
